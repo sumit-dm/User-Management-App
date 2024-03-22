@@ -1,0 +1,33 @@
+spring:
+    application:
+        name: User-Management-App
+    datasource:
+        url: jdbc:mysql://localhost:3306/
+        username: root
+        password: sumit123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+    port:9090
+jpa:
+    properties:
+        hibernate:
+            show_sql: true
+            format_sql: true
+    hibernate:
+        ddl-auto: update
+mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ojay7713@gmail.com
+    password: rokk uicq oinm abkk
+    properties:
+        mail:
+            smtp:
+                starttls:
+                    enable: true
+                    auth: true
+app:
+    messages:
+        invalidCredentials: Credentials are invalid
+        accountLocked: Your account is locked
+        regSuccess : Registration almost completed. Please Check your email to proceed.
