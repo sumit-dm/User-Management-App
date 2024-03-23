@@ -7,4 +7,5 @@ import java.io.Serializable;
 
 public interface UserAccountRepository extends JpaRepository<UserAccountEntity, Serializable> {
     public UserAccountEntity findByEmailAndPassword(String email,String password);
+    public UserAccountEntity findByEmail(String email);
 }

@@ -10,6 +10,8 @@ public class UserForm {
     private String firstName;
     private String lastName;
     private String email;
+    private String password;
+    private String accountStatus;
     private Long phoneNumber;
     private LocalDate dob;
     private String gender;
