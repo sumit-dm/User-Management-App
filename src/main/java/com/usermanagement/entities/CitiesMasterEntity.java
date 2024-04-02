@@ -1,6 +1,6 @@
 package com.usermanagement.entities;
 
-import io.swagger.models.auth.In;
+//import io.swagger.models.auth.In;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

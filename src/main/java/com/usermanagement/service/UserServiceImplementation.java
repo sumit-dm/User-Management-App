@@ -15,6 +15,7 @@ import com.usermanagement.utils.EmailUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,6 +24,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Service
 public class UserServiceImplementation implements UserService {
     @Autowired
     private UserAccountRepository userAccountRepository;
@@ -53,6 +55,7 @@ public class UserServiceImplementation implements UserService {
     @Override
     public Map<Integer, String> getCountries() {
         List<CountryMasterEntity> countries = countryRepository.findAll();
+        //List<CountryMasterEntity> countries = countryRepository.findAll();
         Map<Integer, String> countryMap = new HashMap<>();
         countries.forEach(country -> {
             countryMap.put(country.getCountryId(), country.getCountryName());

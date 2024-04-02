@@ -2,12 +2,12 @@ spring:
     application:
         name: User-Management-App
     datasource:
-        url: jdbc:mysql://localhost:3306/
+        url: jdbc:mysql://localhost:3306/usermanagement
         username: root
         password: sumit123
         driver-class-name: com.mysql.cj.jdbc.Driver
 server:
-    port:9090
+    port: 9090
 jpa:
     properties:
         hibernate:
